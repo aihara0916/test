@@ -1,0 +1,111 @@
+/*
+ * program.js : generate program with register modal window.
+ * For WIDE camp and meeting.
+ *
+ * upa@haeena.net
+ */
+
+.program-table {
+    width: 100%;
+    border: solid 1px #000000;
+    border-collapse: collapse;
+}
+
+.program-table td,
+.program-table th {
+    border: solid 1px #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+.program-top {
+    background: #E1F5C4;
+    font-family: 'Nunito', sans-serif;
+}
+
+.program-table ul {
+    padding: 0px 0px 0px 0px; /* override normalize.css in timetable*/
+}
+
+.program-column-time {
+    width: 16%; /* should be changed in accordance with num of column */
+    font-family: 'Nunito', sans-serif;
+}
+
+.program-column-slot {
+    width: 28%; /* should be changed in accordance with num of column */
+}
+
+.program-column-slot li {
+    padding-left: 1px;
+}
+
+.program-column-slot li:before {
+    display: marker;
+    marker-offset: 1px;
+}
+
+/* modal style */
+.modal { 
+    display: none;
+}
+
+.modalBody {
+    position: fixed;
+    z-index: 1000;
+    background: #ffffff;
+    left: 25%;
+    top: 15%;
+    height: auto;
+    width: 50%;
+    padding: 10px;
+    border: #000 solid 3px;
+    color: black;
+
+    -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+            box-shadow: 0 5px 10px #aaa;
+}
+
+.program-edit-btn {
+    cursor: pointer;
+    margin-left: 0.3em;
+}
+
+.program-delete-close,
+.program-edit-close {
+    float: right;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+.program-text,
+.program-memo {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+}
+
+.program-memo {
+    width: 100%;
+    height: 10em;
+}
+
+.program-select {
+    width: 90%;
+}
+
+.program-submit-btn {
+    float: left;
+    cursor: pointer;
+}
+
+.program-bold {
+    font-weight: bold;
+}
+
